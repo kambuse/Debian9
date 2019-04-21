@@ -1,4 +1,4 @@
-#!/usr/bin
+#!/bin/bash
 if [ $1 ];then
 port_dropbear=$1
 log=/var/log/secure
@@ -44,9 +44,9 @@ done
 echo "---------------------------------------------------------------"
 echo " Monitor User Login SSH "
 else
-echo " Gunakan perintah : sh userlogin.sh [port]"
-echo " contoh : sh sh userlogin.sh 443"
-echo \n
-echo \n
+echo " Gunakan perintah : user-login [port]"
+echo " contoh : user-login 443"
+echo ""
+echo ""
 fi
 exit 0
