@@ -7,7 +7,7 @@ tram=$( free -m | awk 'NR==2 {print $2}' )
 swap=$( free -m | awk 'NR==4 {print $2}' )
 up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 
-echo "CPU model : $cname"
+echo "CPU model : $cname" | lolcat
 echo "Number of cores : $cores"
 echo "CPU frequency : $freq MHz"
 echo "Total amount of ram : $tram MB"
