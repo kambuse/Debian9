@@ -40,7 +40,7 @@ echo "";
 
 echo "------------------------------------------------" | lolcat
 echo " Multi Login = kill " | lolcat
-echo " Cara pakai : kill [nombor PID] "
+echo " Cara pakai : kill [nombor PID] "  | lolcat
 echo "------------------------------------------------" | lolcat
 
 echo "";
