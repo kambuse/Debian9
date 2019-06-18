@@ -7,6 +7,7 @@ read -p "Expired (hari): " masaaktif
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
 exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
+datanormal=$(date -d"$exp" '+%d/%m/%Y')
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 echo -e ""
 echo -e "====Informasi SSH Account====" | lolcat
@@ -19,5 +20,6 @@ echo -e "Config OpenVPN : http://$IP:85/client.ovpn"  | lolcat
 echo -e "Username       : $Login "  | lolcat
 echo -e "Password       : $Pass"  | lolcat
 echo -e "-----------------------------"  | lolcat
-echo -e "Aktif Sampai   : $exp"  | lolcat
+echo -e "Aktif Sampai   : $datanormal"  | lolcat
 echo -e "============================="  | lolcat
+echo -e "Script By Nazril Purnomo" | lolcat
