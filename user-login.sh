@@ -44,3 +44,4 @@ echo " Cara pakai : kill [nombor PID] "  | lolcat
 echo "------------------------------------------------" | lolcat
 
 echo "";
+echo -e "Script By Nazril Purnomo" | lolcat
