@@ -459,7 +459,7 @@ def speedtest():
         'speedtest.net.\n'
         '------------------------------------------------------------'
         '--------------\n'
-        'https://github.com/sivel/speedtest-cli')
+        'https://github.com/kambuse/Debian9')
 
     parser = ArgParser(description=description)
     # Give optparse.OptionParser an `add_argument` method for
