@@ -9,7 +9,8 @@ do
         ID="$(echo $expired | grep -v nobody | cut -d: -f3)"
         exp="$(chage -l $AKUN | grep "Account expires" | awk -F": " '{print $2}')"
         if [[ $ID -ge 1000 ]]; then
-        printf "%-17s %2s\n" "$AKUN" "$exp" | lolcat
+		datanormal=$(date -d"$exp" '+%d/%m/%Y')
+        printf "%-17s %2s\n" "$AKUN" "$datanormal" | lolcat
         fi
 done < /etc/passwd
 JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
