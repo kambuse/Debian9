@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/speedtest --share
+/usr/bin/speedtest-cli --share
