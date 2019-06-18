@@ -19,3 +19,4 @@ echo -e "Config OpenVPN : http://$IP:81/client.ovpn" | lolcat
 echo -e "Username       : $Login" | lolcat
 echo -e "Password       : $Pass\n" | lolcat
 echo -e "=========================" | lolcat
+echo -e "Script By Nazril Purnomo" | lolcat
