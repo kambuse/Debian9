@@ -26,6 +26,6 @@ userdel -f $username
   echo -e "Akses Login untuk username ${blue}$username${NC} sudah dihapus"
   echo "-----------------------------------------------"
 else
-echo "Username ${red}$username${NC} tidak ditemukan di VPS anda"
+echo -e "Username ${red}$username${NC} tidak ditemukan di VPS anda"
     exit 1
     fi
