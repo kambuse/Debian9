@@ -114,9 +114,9 @@ function used_data(){
 	echo -e "\e[031;1m21\e[0m) Speedtest (\e[34;1mcek-speedttes-vps\e[0m)"
 	echo -e "\e[031;1m22\e[0m) Cek Ram (\e[34;1mcek-ram\e[0m)"
 	echo -e "\e[031;1m23\e[0m) Edit Port (\e[34;1medit-port\e[0m)"
-  echo -e "\e[031;1m24\e[0m) Cek Port Aktif (\e[34;1medit-port\e[0m)"
-  echo -e "\e[031;1m25\e[0m) Non Aktif User Expired (\e[34;1medit-port\e[0m)"
-  echo -e "\e[031;1m26\e[0m) Daftar User Expired (\e[34;1medit-port\e[0m)"
+  	echo -e "\e[031;1m24\e[0m) Cek Port Aktif (\e[34;1mport-aktif\e[0m)"
+  	echo -e "\e[031;1m25\e[0m) Non Aktif User Expired (\e[34;1mdisable-user-expire\e[0m)"
+  	echo -e "\e[031;1m26\e[0m) Daftar User Expired (\e[34;1muser-expired-list\e[0m)"
 	echo -e "\e[031;1m27\e[0m) Restart (\e[34;1mrestart\e[0m)"
 	echo ""
 	echo -e "\e[031;1m x\e[0m) Exit"
@@ -128,15 +128,15 @@ function used_data(){
           ;;
         2)  
           clear
-          generate
+          user-gen
           ;;
         3)	
           clear
-          trial
+          user-trial
 	  	  ;;	
         4)
           clear
-          userpass
+          user-pass
           ;;
         5)
           clear
@@ -152,7 +152,7 @@ function used_data(){
 	      ;;
 	 	8)
            clear
-	       autolimit
+	       auto-limit
 	   	  ;;	
 	 	9)
 	       clear
@@ -171,34 +171,34 @@ function used_data(){
 		   read -p "Isikan Maximal User Login (1-2): " MULTILOGIN
 		   echo "    AUTO KILL MULTI LOGIN    "    
 		   echo "-----------------------------"
-	           	autokilluser  $MULTILOGIN
+	           	auto-kill-user  $MULTILOGIN
 		   		autokill  $MULTILOGIN
 	       echo "-----------------------------"
 	       echo "AUTO KILL MULTI LOGIN SELESAI"
 	      ;;
     	13)
        	   clear
-           userban
+           banned-user
 	      ;;
 		14)
            clear
-           userunban
+           unbanned-user
 	      ;;
         15)
 	       clear
-           userlock
+           user-lock
 	      ;;
     	16)
        	   clear
-           userunlock
+           user-unlock
 	      ;;
 		17)
 	       clear
-	       loglimit
+	       log-limit
 	      ;;
 		18)
            clear
-           logban
+           log-ban
 	      ;;
     	19)
 	       clear
@@ -209,7 +209,7 @@ function used_data(){
          ;;
 		20)
 	       clear
-           autoreboot
+           auto-reboot
          ;;
 		21)
 		   clear
@@ -219,15 +219,15 @@ function used_data(){
 	        blue='\e[1;34m'
 	        NC='\e[0m'
 	        echo "Speed Tes Server"
-	        speedtest
+	        cek-speedttes-vps
           ;;
         22)
            clear
-           ps-mem
+           cek-ram
           ;;
         23)
            clear
-           ubahport
+           edit-port
 	      ;;
         24)
            clear
