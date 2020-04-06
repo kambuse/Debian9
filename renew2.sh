@@ -1,4 +1,4 @@
- user-list.sh
+ user-list
 	    #!/bin/bash
             # Created by http://www.sshinjector.net
             red='\e[1;31m'
