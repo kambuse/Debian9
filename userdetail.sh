@@ -31,7 +31,7 @@
         UserPrimaryGroupId=`cat /etc/passwd | grep -Ew ^$Username | cut -d":" -f4`
         UserPrimaryGroup=`cat /etc/group | grep :"$UserPrimaryGroupId": | cut -d":" -f1`
         UserInfo=`cat /etc/passwd | grep -Ew ^$Username | cut -d":" -f5`
-        UserHomeDir=`cat /etc/passwd | grep -Ew ^$Username | cut -d":" -f6`
+        #UserHomeDir=`cat /etc/passwd | grep -Ew ^$Username | cut -d":" -f6`
         UserShell=`cat /etc/passwd | grep -Ew ^$Username | cut -d":" -f7`
         UserGroups=`groups $Username | awk -F": " '{print $2}'`
         PasswordExpiryDate=`chage -l $Username | grep "Password expires" | awk -F": " '{print $2}'`
