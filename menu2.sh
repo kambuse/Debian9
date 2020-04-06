@@ -202,7 +202,7 @@ function used_data(){
 	      ;;
     	19)
 	       clear
-	       userlogin
+	       user-login
            echo "Contoh: 49.0.35.16 lalu Enter"
            read -p "Ketik Salah Satu Alamat IP User: " userip
            curl ipinfo.io/$userip
