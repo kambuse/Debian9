@@ -1,4 +1,4 @@
-user-list.sh
+user-list
 #!/bin/bash
 # Lock User.
 red='\e[1;31m'
