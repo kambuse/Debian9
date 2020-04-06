@@ -29,7 +29,7 @@ Pass=`</dev/urandom tr -dc a-f0-9 | head -c9`
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
-  echo "Script by Nazril Purnomo
+  echo "Script by Nazril Purnomo"
   echo " "
   echo "Demikian Detail Account Trial Anda"
   echo "------------------------------"
