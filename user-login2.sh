@@ -54,15 +54,15 @@
              echo "$PID - $USER - $IP";
              fi
              done
-             if [ -f "/etc/openvpn/server-vpn.log" ]; then
-        	 line=`cat /etc/openvpn/server-vpn.log | wc -l`
+             if [ -f "/etc/openvpn/server/openvpn-status.log" ]; then
+        	 line=`cat /etc/openvpn/server/openvpn-status.log | wc -l`
              a=$((3+((line-8)/2)))
              b=$(((line-8)/2))
 	         echo " "
              echo "Memerika User OpenVPN Yang Login";
 	         echo "(Username - IP - Terkoneksi Sejak)";
            	 echo "-------------------------------------";
-	         cat /etc/openvpn/server-vpn.log | head -n $a | tail -n $b | cut -d "," -f 1,2,5 | sed -e 's/,/   /g' > /tmp/vpn-login-db.txt
+	         cat /etc/openvpn/server/openvpn-status.log | head -n $a | tail -n $b | cut -d "," -f 1,2,5 | sed -e 's/,/   /g' > /tmp/vpn-login-db.txt
 	         cat /tmp/vpn-login-db.txt
              fi
 
