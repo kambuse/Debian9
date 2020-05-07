@@ -45,6 +45,7 @@
                echo "echo "sshinjector.net- Username : $username sudah expired Pada Tanggal: $tgl $bulantahun dan telah di delete pada tanggal: $hariini "" >> /usr/local/bin/deleteduser
 	           echo "Username $username yang expired pada $tgl $bulantahun telah berhasil dihapus dari sistem pada $hariini"
                userdel $username
+	       wg-vpn -d $username
                fi
                done
                echo " "
