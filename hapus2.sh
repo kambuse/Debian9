@@ -18,6 +18,7 @@ egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
 # proses mengganti passwordnya
 userdel -f $username
+wg-vpn -d $username
 
   echo "Script by Nazril Purnomo"
   echo " "
