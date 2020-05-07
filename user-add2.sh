@@ -33,6 +33,7 @@ usermod -s /bin/false $username
 usermod -e  $tanggal_expired $username
   egrep "^$username" /etc/passwd >/dev/null
   echo -e "$password\n$password" | passwd $username
+wg-vpn -a $username
   echo "Script By Nazril Purnomo"
   echo " "
   echo "Demikian Detail Account Yang Telah Dibuat"
@@ -47,5 +48,6 @@ usermod -e  $tanggal_expired $username
   echo "OpenSSH Port    : 22 , 143"
   echo "Squid Proxy     : 8080, 8000"
   echo "OpenVPN Config  : http://$MYIP:85/client.ovpn"
+  echo "Wireguard CFG   : http://$MYIP:85/wireguard/$username.all.png"
   echo "--------------------------------------"
 fi
