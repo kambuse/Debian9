@@ -2,7 +2,7 @@
             red='\e[1;31m'
             green='\e[0;32m'
             NC='\e[0m'
-            echo "Connecting to sshinjector.net..."
+            echo "Connecting to Server..."
             sleep 0.1
             echo "Checking Permision..."
             sleep 0.2
