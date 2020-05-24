@@ -30,25 +30,25 @@
 
             fi
             if test $x -eq 1; then
-            echo "*/3 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script.sh
+            echo "*/3 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script
             echo "User-Auto-Limit telah berhasil diset 3 menit sekali."
             elif test $x -eq 2; then
-            echo "*/5 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script.sh
+            echo "*/5 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script
             echo "User-Auto-Limit telah berhasil diset 5 menit sekali."
             elif test $x -eq 3; then
-            echo "*/7 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script.sh
+            echo "*/7 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script
             echo "User-Auto-Limit telah berhasil diset 7 menit sekali."
             elif test $x -eq 4; then
-            echo "*/10 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script.sh
+            echo "*/10 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script
             echo "User-Auto-Limit telah berhasil diset 10 menit sekali."
             elif test $x -eq 5; then
-            echo "*/15 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script.sh
+            echo "*/15 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script
             echo "User-Auto-Limit telah berhasil diset 15 menit sekali."
             elif test $x -eq 6; then
-            echo "*/30 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script.sh
+            echo "*/30 * * * *  root /usr/bin/auto-limit-script.sh $max" > /etc/cron.d/auto-limit-script
             echo "User-Auto-Limit telah berhasil diset 30 menit sekali."
             elif test $x -eq 7; then
-            rm -f /etc/cron.d/auto-limit-script.sh
+            rm -f /etc/cron.d/auto-limit-script
             echo "User-Auto-Limit telah berhasil dimatikan."
             elif test $x -eq 8; then
             if [ ! -e /root/log-limit.txt ]; then
